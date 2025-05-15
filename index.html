@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 22/04</title>
+</head>
+<body>
+    <p id="jogo">Arise</p><br>
+    <input type="button" value="Arise" onclick="botao_arise()">
+    <input type="button" value="Sumir" onclick="botao_sumir()">
+    
+    <script>
+        var p = document.getElementById("jogo");
+        p.innerHTML = "Hello World!";
+        p.style.backgroundColor = "black";
+        p.style.color = "white";
+        p.disabled = true;
+        p.style.display = "none";
+        function botao_arise() {
+            p.style.display = "inline";
+        }
+
+        function botao_sumir() {
+            p.style.display = "none";
+        }
+
+    </script>
+</body>
+</html>
